@@ -1,5 +1,7 @@
+package Files;
+
 import java.util.Scanner;
-public class Ex02 {
+public class LAB01_Ex02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double Celsius = scan.nextDouble();

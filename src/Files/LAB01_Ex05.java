@@ -1,5 +1,7 @@
+package Files;
+
 import java.util.Scanner;
-public class Ex05 {
+public class LAB01_Ex05 {
     public static void main(String[] args) {
         System.out.println("Provide the size of the array.");
         Scanner scan = new Scanner(System.in);

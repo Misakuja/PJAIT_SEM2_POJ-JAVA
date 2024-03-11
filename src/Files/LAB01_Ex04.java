@@ -1,6 +1,8 @@
+package Files;
+
 import java.util.Scanner;
 
-public class Ex04 {
+public class LAB01_Ex04 {
     public static void main(String[] args) {
         System.out.println("Provide a number from the range of 1 to 7.");
         Scanner scan = new Scanner(System.in);

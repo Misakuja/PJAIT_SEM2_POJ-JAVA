@@ -1,4 +1,6 @@
-public class Ex03 {
+package Files;
+
+public class LAB01_Ex03 {
     public static void main(String[] args) {
         double changingNum = 1.609;
         int miles = 1;

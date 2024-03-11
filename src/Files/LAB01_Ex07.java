@@ -1,5 +1,7 @@
+package Files;
+
 import java.util.Scanner;
-public class Ex07 {
+public class LAB01_Ex07 {
     static int a;
     static int b;
     public static void main(String[] args) {

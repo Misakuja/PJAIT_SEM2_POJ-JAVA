@@ -1,5 +1,7 @@
+package Files;
+
 import java.util.Scanner;
-public class Ex06 {
+public class LAB01_Ex06 {
     static int[] array;
     static int arraySize;
     static int arraySum;
