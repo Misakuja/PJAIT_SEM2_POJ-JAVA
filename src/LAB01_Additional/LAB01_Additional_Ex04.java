@@ -10,6 +10,6 @@ public class LAB01_Additional_Ex04 {
         int minutes = (secondsProvided % 3600) / 60;
         int seconds = (secondsProvided % 3600) % 60;
 
-        System.out.println(hours + ":" + minutes + ":" + seconds);
+        System.out.println(hours + "h " + minutes + "m " + seconds + "s");
     }
 }
