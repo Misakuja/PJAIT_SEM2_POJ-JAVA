@@ -1,4 +1,4 @@
-package Files;
+package LAB01_Additional;
 public class LAB01_Additional_Ex01 {
     public static void main(String[] args) {
         for (int i = 1; i <= 99; i++) {

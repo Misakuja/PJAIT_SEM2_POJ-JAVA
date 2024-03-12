@@ -1,4 +1,4 @@
-package Files;
+package LAB01_Additional;
 public class LAB01_Additional_Ex05 {
     public static void main(String[] args) {
         int min = 1;

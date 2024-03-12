@@ -1,4 +1,4 @@
-package Files;
+package LAB01;
 
 import java.util.Scanner;
 public class LAB01_Ex06 {

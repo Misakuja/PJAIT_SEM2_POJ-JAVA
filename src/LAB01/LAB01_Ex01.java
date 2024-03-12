@@ -1,4 +1,4 @@
-package Files;
+package LAB01;
 
 public class LAB01_Ex01 {
     public static void main(String[] args) {
