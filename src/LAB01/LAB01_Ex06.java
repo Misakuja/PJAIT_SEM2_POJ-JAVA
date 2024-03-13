@@ -23,12 +23,10 @@ public class LAB01_Ex06 {
         } else {
             nextElement = firstElement + 1;
         }
-
         for(int i = 1; i < arraySize; ++i) {
             array[i] = nextElement;
             nextElement += 2;
         }
-
         System.out.println("Resulting array:");
         for(int i = 0; i < arraySize; ++i) {
             System.out.print(array[i] + " ");
@@ -44,7 +42,6 @@ public class LAB01_Ex06 {
         System.out.print("Median: ");
         MedianValue();
     }
-
     static void LowestValue() {
         System.out.println(array[0]);
     }
@@ -57,10 +54,8 @@ public class LAB01_Ex06 {
         for(int i = 0; i < arraySize; ++i) {
             arraySum += array[i];
         }
-
         System.out.println(arraySum);
     }
-
     static void AverageValue() {
         double avgValue = (double)arraySum / (double)arraySize;
         System.out.println(avgValue);
