@@ -15,6 +15,10 @@ public class LAB02_Ex03 {
         if(hour > 12) {
             AMPMString = "PM";
             hour = hour % 12;
+        } else if (hour == 12) {
+            AMPMString = "PM";
+        } else if (hour == 0) {
+            hour += 12;
         }
         System.out.println("Same time in 12-hours format:\n" + hour + ":" + minutes + AMPMString);
     }
