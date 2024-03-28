@@ -1,8 +1,8 @@
 package LAB04.LAB04_Ex02;
-public class LAB04_Ex02_ClassSquare {
+public class Square {
      private final double side;
 
-     public LAB04_Ex02_ClassSquare(double side) {
+     public Square(double side) {
          this.side = side;
      }
 

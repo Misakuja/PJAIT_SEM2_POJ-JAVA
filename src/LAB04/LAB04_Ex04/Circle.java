@@ -1,8 +1,8 @@
 package LAB04.LAB04_Ex04;
 
-public class LAB04_Ex04_ClassMyCircle {
+public class Circle {
     private double radius;
-    public LAB04_Ex04_ClassMyCircle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
     public double calculateCircumference() {
