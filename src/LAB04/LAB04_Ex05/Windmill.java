@@ -2,27 +2,28 @@ package LAB04.LAB04_Ex05;
 import java.util.Scanner;
 
 public class Windmill {
-    private final int slow = 0;
-    private final int medium = 1;
-    private final int fast = 2;
-    private int speed;
+
+    public enum Speed {
+    SLOW, MEDIUM, FAST
+    }
+    private Speed speed;
     private boolean on;
     private double radius;
     private String color;
 
     Windmill() {
-        this.speed = 1;
+        this.speed = Speed.MEDIUM;
         this.on = true;
         this.radius = 10;
         this.color = "white";
     }
-    Windmill(int speed, boolean on, double radius, String color) {
+    Windmill(Speed speed, boolean on, double radius, String color) {
         this.speed = speed;
         this.on = on;
         this.radius = radius;
         this.color = color;
     }
-    public void setSpeed(int speed) {
+    public void setSpeed(Speed speed) {
         this.speed = speed;
     }
     public void turnOnOff(boolean on) {
@@ -37,9 +38,11 @@ public class Windmill {
     public void windmillInfo() {
         System.out.println("W I N D M I L L:");
         System.out.print("Speed: ");
-        if (this.speed == this.slow) System.out.print("slow\n");
-        else if (this.speed == this.medium) System.out.print("medium\n");
-        else if(this.speed == this.fast) System.out.print("fast\n");
+        switch (this.speed) {
+            case Speed.SLOW -> System.out.print("slow\n");
+            case Speed.MEDIUM -> System.out.print("medium\n");
+            case Speed.FAST -> System.out.print("fast\n");
+        }
         System.out.print("Is it on?: ");
         if (on) System.out.print("yes\n");
         else System.out.print("no\n");
@@ -64,9 +67,14 @@ public class Windmill {
                         System.out.println("Adjusting the speed of the windmill. Please input the 0, 1 or 2 accordingly to adjust speed.\n0 - Slow\n1 - Medium\n2 - Fast\n");
                         int speedInput = scanner.nextInt();
                         if (speedInput >= 0 && speedInput <= 2) {
-                            setSpeed(speedInput);
+                            switch (speedInput) {
+                                case 0 -> setSpeed(Speed.SLOW);
+                                case 1 -> setSpeed(Speed.MEDIUM);
+                                case 2 -> setSpeed(Speed.FAST);
+                            }
                             break;
-                        } else {
+                        }
+                        else {
                             System.out.println("Wrong input. Try again.");
                         }
                     }
