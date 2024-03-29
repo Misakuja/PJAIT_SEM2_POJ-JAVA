@@ -10,7 +10,7 @@ public class Windmill {
         private final int value;
         Speed(int value) {
             this.value = value;
-            }
+        }
     }
     private Speed speed;
     private boolean on;
