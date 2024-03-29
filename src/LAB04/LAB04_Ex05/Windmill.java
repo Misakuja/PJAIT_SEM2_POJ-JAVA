@@ -4,7 +4,13 @@ import java.util.Scanner;
 public class Windmill {
 
     public enum Speed {
-    SLOW, MEDIUM, FAST
+        SLOW(1),
+        MEDIUM(2),
+        FAST(3);
+        private final int value;
+        Speed(int value) {
+            this.value = value;
+            }
     }
     private Speed speed;
     private boolean on;
@@ -66,11 +72,11 @@ public class Windmill {
                     while (true) {
                         System.out.println("Adjusting the speed of the windmill. Please input the 0, 1 or 2 accordingly to adjust speed.\n0 - Slow\n1 - Medium\n2 - Fast\n");
                         int speedInput = scanner.nextInt();
-                        if (speedInput >= 0 && speedInput <= 2) {
+                        if (speedInput > 0 && speedInput <= 3) {
                             switch (speedInput) {
-                                case 0 -> setSpeed(Speed.SLOW);
-                                case 1 -> setSpeed(Speed.MEDIUM);
-                                case 2 -> setSpeed(Speed.FAST);
+                                case 1 -> setSpeed(Speed.SLOW);
+                                case 2 -> setSpeed(Speed.MEDIUM);
+                                case 3 -> setSpeed(Speed.FAST);
                             }
                             break;
                         }
