@@ -2,7 +2,6 @@ package LAB04.LAB04_Ex05;
 import java.util.Scanner;
 
 public class Windmill {
-
     public enum Speed {
         SLOW(1),
         MEDIUM(2),
