@@ -39,7 +39,8 @@ public class Main {
                 default ->
                         System.out.println("Invalid input");
             }
-            Fraction.showResult(fraction1, fraction2, fractionResult, inputDecision);
+            Fraction.alterFractions(fractionResult)
+;            Fraction.showResult(fraction1, fraction2, fractionResult, inputDecision);
             System.out.println("Would you like to go back to the menu?\n- Input 1 to go back.\n- Input anything else to quit");
         } while (scanner.nextInt() == 1);
         scanner.close();
