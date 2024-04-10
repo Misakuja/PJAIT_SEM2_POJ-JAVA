@@ -26,7 +26,7 @@ public class Game {
         userInput = scanner.nextInt();
     }
     public void GameGuessing() {
-        while(true) {
+        for(int i = 0; i < 5; i++) {
             System.out.println("Enter your guess:");
             userGuess();
             if (userInput < minValue || userInput > maxValue) {
@@ -43,5 +43,6 @@ public class Game {
                 break;
             }
         }
+        System.out.println("You failed!");
     }
 }

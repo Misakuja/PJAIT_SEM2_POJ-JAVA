@@ -2,6 +2,7 @@ package LAB04.LAB04_Ex05;
 import java.util.Scanner;
 
 public class Windmill {
+
     public enum Speed {
         SLOW(1),
         MEDIUM(2),
@@ -28,12 +29,8 @@ public class Windmill {
         this.radius = radius;
         this.color = color;
     }
-    public void setSpeed(Speed speed) {
-        this.speed = speed;
-    }
-    public void turnOnOff(boolean on) {
-        this.on = on;
-    }
+    public void setSpeed(Speed speed) { this.speed = speed; }
+    public void turnOnOff(boolean on) { this.on = on; }
     public void setRadius(double radius) {
         this.radius = radius;
     }
@@ -69,7 +66,7 @@ public class Windmill {
             switch (inputDecision) {
                 case 1 -> {
                     while (true) {
-                        System.out.println("Adjusting the speed of the windmill. Please input the 0, 1 or 2 accordingly to adjust speed.\n0 - Slow\n1 - Medium\n2 - Fast\n");
+                        System.out.println("Adjusting the speed of the windmill. Please input the 1, 2 or 3 accordingly to adjust speed.\n1 - Slow\n2 - Medium\n3 - Fast\n");
                         int speedInput = scanner.nextInt();
                         if (speedInput > 0 && speedInput <= 3) {
                             switch (speedInput) {
