@@ -9,8 +9,8 @@ public class Main {
         int y = scanner.nextInt();
         scanner.close();
 
-        Point point1 = new Point();
-        Point point2 = new Point(x, y);
+        Distance point1 = new Distance();
+        Distance point2 = new Distance(x, y);
 
         System.out.println("Distance between the origin (0,0) and the given point using a method with classic arguments passing is: " + point1.calculateDistance(x, y));
 

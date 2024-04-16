@@ -8,7 +8,7 @@ public class Main {
         System.out.print("Enter the radius for the circle: ");
         double radiusInput = scanner.nextDouble();
 
-        Circle circle = new Circle(radiusInput);
+        CalculationsCircle circle = new CalculationsCircle(radiusInput);
         circle.printResults();
 
         System.out.print("Change the radius of the circle: ");
