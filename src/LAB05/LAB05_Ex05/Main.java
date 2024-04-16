@@ -25,22 +25,21 @@ public class Main {
             int inputDecision = scanner.nextInt();
             switch (inputDecision) {
                 case 1 ->
-                        Fraction.addition(fraction1, fraction2, fractionResult);
+                        Fraction.additionSubstitution(fraction1, fraction2, fractionResult, inputDecision);
                 case 2 ->
-                        Fraction.substitution(fraction1, fraction2, fractionResult);
+                        Fraction.additionSubstitution(fraction1, fraction2, fractionResult, inputDecision);
                 case 3 ->
-                        Fraction.multiplication(fraction1, fraction2, fractionResult);
+                        Fraction.multiplicationDivision(fraction1, fraction2, fractionResult, inputDecision);
                 case 4 ->
-                        Fraction.division(fraction1, fraction2, fractionResult);
+                        Fraction.multiplicationDivision(fraction1, fraction2, fractionResult, inputDecision);
                 case 5 ->
                         fraction1 = fraction1.assignInfo();
                 case 6 ->
-                        fraction2 = fraction1.assignInfo();
+                        fraction2 = fraction2.assignInfo();
                 default ->
                         System.out.println("Invalid input");
             }
-            Fraction.alterFractions(fractionResult)
-;            Fraction.showResult(fraction1, fraction2, fractionResult, inputDecision);
+            Fraction.showResult(fraction1, fraction2, fractionResult, inputDecision);
             System.out.println("Would you like to go back to the menu?\n- Input 1 to go back.\n- Input anything else to quit");
         } while (scanner.nextInt() == 1);
         scanner.close();

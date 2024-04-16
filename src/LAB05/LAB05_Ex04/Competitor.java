@@ -8,7 +8,6 @@ public class Competitor {
     private int maxSpeed;
     private int distanceRan;
     private Random random;
-    private int randomNumber;
     Scanner scanner = new Scanner(System.in);
 
     Competitor(String name, int minSpeed, int maxSpeed) {
@@ -39,7 +38,7 @@ public class Competitor {
         System.out.println("Name: " + name + "\nSpeed: " + minSpeed + "-" + maxSpeed + "km/h");
     }
     public void run() {
-            randomNumber = random.nextInt((maxSpeed - minSpeed + 1) +  minSpeed);
+        int randomNumber = random.nextInt((maxSpeed - minSpeed + 1) + minSpeed);
             distanceRan -= randomNumber;
     }
 }

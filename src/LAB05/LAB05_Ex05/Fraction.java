@@ -61,47 +61,54 @@ public class Fraction {
         }
     }
 
-    public static void alterFractions(Fraction result) {
-        while (result.numerator % 2 == 0 && result.denominator % 2 == 0) {
-            result.numerator /= 2;
-            result.denominator /= 2;
-        }
-        while (result.numerator % 3 == 0 && result.denominator % 3 == 0) {
-            result.numerator /= 3;
-            result.denominator /= 3;
-        }
-    }
+    public static void additionSubstitution(Fraction fraction1, Fraction fraction2, Fraction result, int inputDecision) {
+        int fractionDenominator1 = fraction1.denominator;
+        int fractionDenominator2 = fraction2.denominator;
 
-    public static void addition(Fraction fraction1, Fraction fraction2, Fraction result) {
         if (fraction1.denominator != fraction2.denominator) {
-            fraction1.numerator *= fraction2.denominator;
-            fraction1.denominator *= fraction2.denominator;
+            fraction1.numerator *= fractionDenominator2;
+            fraction1.denominator *= fractionDenominator2;
 
-            fraction2.numerator *= fraction1.denominator;
-            fraction2.denominator *= fraction1.denominator;
+            fraction2.numerator *= fractionDenominator1;
+            fraction2.denominator *= fractionDenominator1;
         }
-        result.numerator = fraction1.numerator + fraction2.numerator;
+        if (inputDecision == 1) result.numerator = fraction1.numerator + fraction2.numerator;
+        else if (inputDecision == 2) result.numerator = fraction1.numerator - fraction2.numerator;
         result.denominator = fraction1.denominator;
+
+        fraction1.numerator /= fractionDenominator2;
+        fraction1.denominator /= fractionDenominator2;
+
+        fraction2.numerator /= fractionDenominator1;
+        fraction2.denominator /= fractionDenominator1;
+
+        alterFraction(result);
     }
 
-    public static void substitution(Fraction fraction1, Fraction fraction2, Fraction result) {
-        if (fraction1.denominator != fraction2.denominator) {
-            fraction1.numerator *= fraction2.denominator;
-            fraction1.denominator *= fraction2.denominator;
-            fraction2.numerator *= fraction1.denominator;
-            fraction2.denominator *= fraction1.denominator;
+    public static void multiplicationDivision(Fraction fraction1, Fraction fraction2, Fraction result, int inputDecision) {
+        if (inputDecision == 1)
+            result.numerator = fraction1.numerator * fraction2.numerator;
+        else if (inputDecision == 2)
+            result.denominator = fraction1.denominator * fraction2.denominator;
+    }
+
+    private static int greatestCommonDivisor(Fraction result) {
+        int a = result.numerator;
+        int b = result.denominator;
+
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-        result.numerator = fraction1.numerator - fraction2.numerator;
-        result.denominator = fraction1.denominator;
+        return a;
     }
 
-    public static void multiplication(Fraction fraction1, Fraction fraction2, Fraction result) {
-        result.numerator = fraction1.numerator * fraction2.numerator;
-        result.denominator = fraction1.denominator * fraction2.denominator;
-    }
-
-    public static void division(Fraction fraction1, Fraction fraction2, Fraction result) {
-        result.numerator = fraction1.numerator * fraction2.denominator;
-        result.denominator = fraction1.denominator * fraction2.numerator;
+    private static void alterFraction(Fraction result) {
+        int gcd = greatestCommonDivisor(result);
+        if (gcd != 0) {
+            result.numerator /= gcd;
+            result.denominator /= gcd;
+        }
     }
 }
