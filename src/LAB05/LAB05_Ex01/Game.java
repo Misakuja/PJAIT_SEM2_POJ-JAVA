@@ -2,7 +2,7 @@ package LAB05.LAB05_Ex01;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Game {
+class Game {
     private int minValue;
     private int maxValue;
     private int randomNumber;

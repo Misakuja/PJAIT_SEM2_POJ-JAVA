@@ -1,5 +1,5 @@
 package LAB04.LAB04_Ex02;
-public class Square {
+class Square {
      private final double side;
 
      public Square(double side) {

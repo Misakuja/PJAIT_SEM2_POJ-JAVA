@@ -1,6 +1,6 @@
 package LAB02;
 import java.util.Scanner;
-public class LAB02_Ex03 {
+class LAB02_Ex03 {
     public static void main(String[] args) {
         System.out.println("Provide time in 24-hours format. Please use the HH:mm format.");
         Scanner scan = new Scanner(System.in);

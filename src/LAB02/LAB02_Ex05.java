@@ -1,6 +1,6 @@
 package LAB02;
 import java.util.Scanner;
-public class LAB02_Ex05 {
+class LAB02_Ex05 {
     public static void main(String[] args) {
         int rows = 10;
         int seatsInRow = 8;

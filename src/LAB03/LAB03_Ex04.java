@@ -2,7 +2,7 @@ package LAB03;
 
 import java.util.Scanner;
 
-public class LAB03_Ex04 {
+class LAB03_Ex04 {
     public static void stringReverse(String inputString) {
         String[] reversedString = new String[inputString.length()];
 

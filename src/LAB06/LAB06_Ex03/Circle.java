@@ -1,5 +1,5 @@
 package LAB06.LAB06_Ex03;
-public class Circle {
+class Circle {
     CirclePoint middlePoint;
     double radius;
 

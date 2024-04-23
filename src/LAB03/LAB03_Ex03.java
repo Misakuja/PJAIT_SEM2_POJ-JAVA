@@ -2,7 +2,7 @@
 
     import java.util.Scanner;
 
-    public class LAB03_Ex03 {
+    class LAB03_Ex03 {
 
         public static int[] input() {
             int[] numbers = new int[2];

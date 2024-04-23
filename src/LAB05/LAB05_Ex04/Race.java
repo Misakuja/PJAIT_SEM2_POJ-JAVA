@@ -1,5 +1,5 @@
 package LAB05.LAB05_Ex04;
-public class Race {
+class Race {
     public static void main(String[] args) {
         System.out.println("Provide info for the three competitors:");
         Competitor competitor1 = new Competitor();

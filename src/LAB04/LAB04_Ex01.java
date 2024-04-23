@@ -1,7 +1,7 @@
 package LAB04;
 import java.util.Scanner;
 
-public class LAB04_Ex01 {
+class LAB04_Ex01 {
     public static int[] inputArray(int size) {
         int[] array = new int[size];
         Scanner scanner = new Scanner(System.in);

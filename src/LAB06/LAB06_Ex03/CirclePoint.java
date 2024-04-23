@@ -1,6 +1,6 @@
 package LAB06.LAB06_Ex03;
 
-public class CirclePoint {
+class CirclePoint {
     int x;
     int y;
     public CirclePoint(int x, int y) {

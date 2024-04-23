@@ -2,7 +2,7 @@ package LAB03;
 
 import java.util.Scanner;
 
-public class LAB03_Ex05 {
+class LAB03_Ex05 {
     public static void multiplying(int[] array) {
         System.out.println("Array elements multiplied by 3:");
         for(int i = 0; i < 5; i++) {

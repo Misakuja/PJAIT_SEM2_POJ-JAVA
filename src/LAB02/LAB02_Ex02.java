@@ -1,6 +1,6 @@
     package LAB02;
     import java.util.Scanner;
-    public class LAB02_Ex02 {
+    class LAB02_Ex02 {
         static int[] array;
         static int arraySize;
         public static void main(String[] args) {

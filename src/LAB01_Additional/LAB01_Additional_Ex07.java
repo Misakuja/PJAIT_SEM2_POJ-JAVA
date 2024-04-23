@@ -1,6 +1,6 @@
 package LAB01_Additional;
 import java.util.Scanner;
-public class LAB01_Additional_Ex07 {
+class LAB01_Additional_Ex07 {
     public static void main(String[] args) {
         System.out.println("Provide an integer number.");
         Scanner scan = new Scanner(System.in);

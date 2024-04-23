@@ -1,6 +1,6 @@
 package LAB04.LAB04_Ex04;
 
-public class CalculationsCircle {
+class CalculationsCircle {
     private double radius;
     public CalculationsCircle(double radius) {
         this.radius = radius;

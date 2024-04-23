@@ -1,6 +1,6 @@
 package LAB06.LAB06_Ex02;
 
-public class Rectangle {
+class Rectangle {
     private int a;
     private int b;
 

@@ -1,6 +1,6 @@
 package LAB01_Additional;
 import java.util.Scanner;
-public class LAB01_Additional_Ex06 {
+class LAB01_Additional_Ex06 {
     public static void main(String[] args) {
         System.out.println("Provide two strings to combine.");
         Scanner scan1 = new Scanner(System.in);

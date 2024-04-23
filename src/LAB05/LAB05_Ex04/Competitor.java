@@ -2,7 +2,7 @@ package LAB05.LAB05_Ex04;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Competitor {
+class Competitor {
     private String name;
     private int minSpeed;
     private int maxSpeed;

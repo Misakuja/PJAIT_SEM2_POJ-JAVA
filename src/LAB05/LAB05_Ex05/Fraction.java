@@ -2,17 +2,17 @@ package LAB05.LAB05_Ex05;
 
 import java.util.Scanner;
 
-public class Fraction {
+class Fraction {
     private int denominator;
     private int numerator;
     Scanner scanner = new Scanner(System.in);
 
-    public Fraction(int numerator, int denominator) {
+    Fraction(int numerator, int denominator) {
         this.denominator = denominator;
         this.numerator = numerator;
     }
 
-    public Fraction assignInfo() {
+    Fraction assignInfo() {
         System.out.println("Provide the numerator for the fraction:");
         numerator = scanner.nextInt();
 

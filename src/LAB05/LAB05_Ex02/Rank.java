@@ -1,6 +1,6 @@
 package LAB05.LAB05_Ex02;
 
-public enum Rank {
+enum Rank {
     TWO,
     THREE,
     FOUR,

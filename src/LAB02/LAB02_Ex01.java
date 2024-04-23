@@ -1,6 +1,6 @@
 package LAB02;
 import java.util.Scanner;
-public class LAB02_Ex01 {
+class LAB02_Ex01 {
     static int radius;
     public static void main(String[] args) {
         System.out.print("Provide the radius for the circle.");

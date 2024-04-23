@@ -1,6 +1,6 @@
 package LAB02;
 import java.util.Scanner;
-public class LAB02_Ex04 {
+class LAB02_Ex04 {
     public static void main(String[] args) {
         System.out.println("Provide a word to check.");
         Scanner scan = new Scanner(System.in);

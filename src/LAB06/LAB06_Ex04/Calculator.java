@@ -1,6 +1,6 @@
 package LAB06.LAB06_Ex04;
 
-public class Calculator {
+class Calculator {
     private final double basePrice;
 
     public Calculator() {

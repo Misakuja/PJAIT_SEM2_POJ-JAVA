@@ -1,6 +1,6 @@
 package LAB05.LAB05_Ex05;
 import java.util.Scanner;
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Fraction fractionResult = new Fraction();

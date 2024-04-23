@@ -1,7 +1,7 @@
 package LAB03;
 import java.util.Scanner;
 
-public class LAB03_Ex01 {
+class LAB03_Ex01 {
     public static double InputAndDivision() {
         double num1, num2;
         System.out.println("Provide the number to divide.");

@@ -2,7 +2,7 @@ package LAB03;
 
 import java.util.Scanner;
 
-public class LAB03_Ex06 {
+class LAB03_Ex06 {
     public static void main(String[] args) {
         System.out.println("Input the array size");
         Scanner scan = new Scanner(System.in);

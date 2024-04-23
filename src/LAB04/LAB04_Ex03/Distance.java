@@ -1,6 +1,6 @@
 package LAB04.LAB04_Ex03;
 
-public class Distance {
+class Distance {
         private final int x;
         private final int y;
         public Distance() {

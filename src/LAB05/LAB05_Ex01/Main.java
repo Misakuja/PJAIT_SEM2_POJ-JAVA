@@ -1,5 +1,5 @@
 package LAB05.LAB05_Ex01;
-public class Main {
+class Main {
     public static void main(String[] args) {
         Game game = new Game();
         System.out.println("Enter the minimum value for the random number range:");

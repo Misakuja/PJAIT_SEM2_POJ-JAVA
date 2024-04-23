@@ -1,6 +1,6 @@
 package LAB05.LAB05_Ex02;
 
-public class Main {
+class Main {
     static Suit[] suits = Suit.values();
     static Rank[] ranks = Rank.values();
     public static void main(String[] args) {

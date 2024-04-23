@@ -1,5 +1,5 @@
 package LAB04.LAB04_Ex05;
-public class Main {
+class Main {
     public static void main(String[] args) {
         Windmill windmill = new Windmill();
         Windmill windmill2 = new Windmill((Windmill.Speed.MEDIUM), true, 10.0, "white");

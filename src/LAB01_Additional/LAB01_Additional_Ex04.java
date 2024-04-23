@@ -1,6 +1,6 @@
 package LAB01_Additional;
 import java.util.Scanner;
-public class LAB01_Additional_Ex04 {
+class LAB01_Additional_Ex04 {
     public static void main(String[] args) {
         System.out.println("Provide the amount of seconds to convert.");
         Scanner scan = new Scanner(System.in);

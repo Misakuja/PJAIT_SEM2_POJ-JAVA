@@ -2,7 +2,7 @@ package LAB04.LAB04_Ex02;
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         System.out.println("Provide the size of the square's side");
         Scanner scanner = new Scanner(System.in);

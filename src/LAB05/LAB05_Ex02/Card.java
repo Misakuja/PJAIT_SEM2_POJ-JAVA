@@ -1,6 +1,6 @@
 package LAB05.LAB05_Ex02;
 
-public class Card {
+class Card {
     private final Suit suit;
     private final Rank rank;
     public Card(Suit suit, Rank rank) {

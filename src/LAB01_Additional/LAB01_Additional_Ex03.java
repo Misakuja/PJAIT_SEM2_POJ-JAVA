@@ -1,6 +1,6 @@
 package LAB01_Additional;
 import java.util.Scanner;
-public class LAB01_Additional_Ex03 {
+class LAB01_Additional_Ex03 {
     public static void main(String[] args) {
         System.out.println("Provide three numbers for the equation.");
         Scanner scanNum1 = new Scanner(System.in);

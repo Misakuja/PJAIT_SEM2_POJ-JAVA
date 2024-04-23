@@ -1,7 +1,7 @@
 package LAB05.LAB05_Ex03;
 import java.util.Random;
 
-public class Coin {
+class Coin {
     private int attempts;
     private int tailsAmount;
     private int headsAmount;
