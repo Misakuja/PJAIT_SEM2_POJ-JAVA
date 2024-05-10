@@ -22,7 +22,7 @@ public class Main {
             Person person = new Person(nameSurnameArray[0], nameSurnameArray[1], yearOfBirth);
             if (person.name != null && person.surname != null && person.yearOfBirth != null) {
                 System.out.println(person);
-                System.exit(1);
+                System.exit(0);
             }
         }
     }
