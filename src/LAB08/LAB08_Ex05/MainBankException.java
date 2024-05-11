@@ -1,4 +1,5 @@
 package LAB08.LAB08_Ex05;
+import javax.naming.InsufficientResourcesException;
 import java.util.Scanner;
 
 public class MainBankException {
@@ -18,7 +19,11 @@ public class MainBankException {
         }
         System.out.println("How much do you want to withdraw?");
             int amount = getAmount();
-            account.withdraw(amount);
+            try {
+                account.withdraw(amount);
+            } catch (InsufficientResourcesException e) {
+                System.out.println("Insufficient balance.");
+            }
             System.out.printf("Thank you for using our service. Your current balance is %.2f $", account.getBalance());
     }
 
@@ -31,7 +36,12 @@ public class MainBankException {
     }
 
     private static int getAmount() {
-        return Integer.parseInt(scanner.nextLine());
+        try {
+            return Integer.parseInt(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Please enter a valid number");
+            return getAmount();
+        }
     }
 
     private static void endProgram() {

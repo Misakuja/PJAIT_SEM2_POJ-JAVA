@@ -1,5 +1,7 @@
 package LAB08.LAB08_Ex05;
 
+import javax.naming.InsufficientResourcesException;
+
 class Account {
     private String accountName;
     private double balance;
@@ -9,7 +11,10 @@ class Account {
         this.balance = initialBalance;
     }
 
-    public int withdraw(int amount) {
+    public int withdraw(int amount) throws InsufficientResourcesException {
+        if (amount > balance) {
+            throw new InsufficientResourcesException("Insufficient balance");
+        }
         balance-=amount;
         return amount;
     }
