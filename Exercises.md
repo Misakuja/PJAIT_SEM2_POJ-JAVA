@@ -241,7 +241,7 @@ Metody mają nazywać się tak samo.W celu weryfikacji w psvm utwórz nowy obiek
 
 2. Stwórz klasę Prostokąt o dwóch atrybutach:
 - a – długość pierwszego boku
-- -b – długość drugiego boku
+- b – długość drugiego boku
 Stwórz dwa konstruktory:
 - dwuargumentowy, który ustawi wartości atrybutów a oraz b
 - jednoargumentowy, ustawiający tą samą wartość dla a oraz b.
