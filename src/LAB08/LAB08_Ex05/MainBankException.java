@@ -26,7 +26,6 @@ public class MainBankException {
             }
             System.out.printf("Thank you for using our service. Your current balance is %.2f $", account.getBalance());
     }
-
     private static Account createNewAccount() {
         System.out.println("What is your name?");
         String name = scanner.nextLine();
