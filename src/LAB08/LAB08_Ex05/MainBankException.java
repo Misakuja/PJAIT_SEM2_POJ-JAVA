@@ -36,6 +36,11 @@ public class MainBankException {
 
     private static int getAmount() {
         try {
+            int amount = Integer.parseInt(scanner.nextLine());
+            if (amount < 0) {
+                System.out.println("Please enter a valid number");
+                return getAmount();
+            }
             return Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
             System.out.println("Please enter a valid number");
