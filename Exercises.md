@@ -370,3 +370,43 @@ Następnie:
 - Zapewnij wykonanie podstawowego scenariusza tj. zebrania przez program 2 liczb i wykonania akcji dzielenia, w sytuacji gdy użytkownik dzielił przez zero wyświetl „Błąd, nie można dzielić przez zero"
 
 ----
+
+# LAB09
+
+1. Stwórz abstrakcyjną klasę Animal i trzy klasy (nieabstrakcyjne) które po niej dziedziczą.
+Klasa Animal powinna mieć w sobie abstrakcyjną metodę makeSound(), a klasy dziedziczące implementację tej metody.
+Stwórz obiekty klas dziedziczących, umieść je we wspólnej tablicy i pokaż, że działają.
+
+----
+
+3. Utwórz klasy Figura, Figura2D i Figura3D.Niech klasa Figura będzie abstrakcyjna i umożliwia obliczenie pola całkowitego (double) oraz obliczenie sumy krawędzi (int). 
+
+Niech klasa Figura posiada konstruktor w postaci tablicy typu int stanowiącej zbiór wszystkich krawędzi.
+Klasy Figura2D i Figura3D powinny dziedziczyć po klasie Figura.
+Figura3D dodatkowo posiada metodę do obliczenia objetosci figury (double).
+
+Następnie zaimplementuj klasy Prostokąt oraz Kwadrat pamiętając o odpowiednim dziedziczeniu.
+
+Następnie utwórz klasę Prostopadloscian, która będzie dziedziczyć po odpowiedniej klasie zwyżej wymienionych i zaimplementuj wszystkie metody odziedziczone po klasach nadrzędnych.
+Na koniec utwórz klasę Szescian i odpowiednio podepnij do łańcucha dziedziczenia. Jeżeli użytkownik przy tworzeniu jakiegokolwiek z obiektów jako argument zostanie podane 0, program powinien rzucić wyjątek i zakończyć działanie.
+
+Przetestuj swoje rozwiązanie w bloku psvm klasy Main.
+
+PodpowiedźW klasie dziedziczącej możesz zmienić konstruktor tak, aby przyjmował np. 1 parametr typuint, a następnie wewnątrz konstruktora przekazać ten parametr w innej formie, tak abyspełnić wymagania konstruktora nadrzędnego np.
+```Java
+Kwadrat(int bok){
+super(new int[]{bok,bok,bok,bok});
+}
+```
+
+----
+
+3.Napisz klasę StringUtils, która umożliwi użytkownikowi operacje na stringach. 
+
+Program ma wyświetlić menu, z którego użytkownik może wybrać działanie programu:
+- odwracanie stringów
+- szyfrowanie stringów za pomocą szyfru Cezara (czyli przesuwanie każdego ze znaków o X liter walfabecie, np. litera „b” przesunięta o 3 znaki to „e”; użytkownik podaje o ile liter ma być przesunięte)
+- zamiana stringa na małe litery
+- zamiana stringa na duże literyProgram ma rzucić wyjątek jeżeli:
+  - string po operacji wygląda dokładnie tak samo jak przed operacją
+  - użytkownik wpisze pusty string albo pustą opcję w menu
