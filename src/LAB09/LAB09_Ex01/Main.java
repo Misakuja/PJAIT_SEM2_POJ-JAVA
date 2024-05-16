@@ -6,9 +6,11 @@ class Main {
         Cat cat = new Cat();
         Capybara capybara = new Capybara();
 
-        pig.makeSound();
-        capybara.makeSound();
-        cat.makeSound();
 
+        Animal[] objects = {pig, cat, capybara};
+
+        objects[0].makeSound();
+        objects[1].makeSound();
+        objects[2].makeSound();
     }
 }
