@@ -410,3 +410,37 @@ Program ma wyświetlić menu, z którego użytkownik może wybrać działanie pr
 - zamiana stringa na duże literyProgram ma rzucić wyjątek jeżeli:
   - string po operacji wygląda dokładnie tak samo jak przed operacją
   - użytkownik wpisze pusty string albo pustą opcję w menu
+    
+----
+
+# LAB10
+
+1. Napisz program, który wczyta dane z pliku tekstowego i zsumuje co drugą linijkę pliku. Plik znajduje się na Teams („Input”).
+
+----
+
+2. Napisz program, który przeanalizuje katalogi w basedir (na Teams - , „basedir.zip”). Program ma wykazać który z katalogów ma najwięcej plików.
+
+----
+
+3. Napisz program, który poda następne 100 roczników przestępnych za pomocą klasy LocalDate.
+
+----
+
+4. Napisz program, który pobierze format daty od użytkownika a następnie wyświetli w zadanym formacie obecną datę i/lub godzinę.
+
+----
+
+5. Przygotuj interfejs Figura który określa dwie metody: „obliczPole” i „obliczObwód”.
+Następnie przygotuj trzy różne klasy które implementują ten interfejs na różne sposoby. Pokaż w pętli jak działają.
+
+----
+
+6. Do istniejących klas z zadania 5 zaimplementuj interfejs Comparable, w taki sposób aby sortował figury od tej z najmniejszym polem do tej z największym polem powierzchni.
+
+----
+
+7. Stwórz klasę Student - niech ma imię, nazwisko i numer indeksu. Niech implementuje interfejs Comparable. Stwórz tablice takich Studentów i posortuj ich za pomocą Arrays.sort().
+Studenci mają być posortowani według indeksu. (indeks ma mieć format PJATK, np. s12345)
+
+----
