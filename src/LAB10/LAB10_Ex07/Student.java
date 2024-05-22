@@ -34,6 +34,6 @@ class Student implements Comparable<Student> {
     }
 
     private boolean validateNameSurname(String nameSurname) {
-        return Pattern.matches("[^0-9]", nameSurname);
+        return Pattern.matches("[a-zA-Z]+", nameSurname);
     }
 }
