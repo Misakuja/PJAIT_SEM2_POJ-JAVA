@@ -26,7 +26,7 @@ class StringUtils {
                 cipherResult.append(curChar);
             }
         }
-        return cipherResult.toString(); //hoping I understand this correctly lmao
+        return cipherResult.toString();
     }
     String toLowerCase(String s) {
         if (s.isEmpty()) throw new IllegalArgumentException("Provided an empty string");
