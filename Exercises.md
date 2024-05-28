@@ -448,11 +448,10 @@ Studenci mają być posortowani według indeksu. (indeks ma mieć format PJATK, 
 # LAB11
 
 1. Lista – utwórz dwie następujące metody statyczne :
-- Metoda do wyświetlania zduplikowanych elementów w liście
-- Metoda usuwająca zduplikowane elementy w liście
-- 
-Obie metody powinny na wejściu przyjmować argument typu interfejs Listy z dowolnym zbiorem elementów (List<>).
+- Metoda do wyświetlania zduplikowanych elementów w liście.
+- Metoda usuwająca zduplikowane elementy w liście.
 
+Obie metody powinny na wejściu przyjmować argument typu interfejs Listy z dowolnym zbiorem elementów (List<>).
 Przetestuj swoje rozwiązanie.
 
 ----
