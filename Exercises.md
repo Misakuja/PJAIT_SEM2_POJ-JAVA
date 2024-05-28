@@ -444,3 +444,50 @@ Następnie przygotuj trzy różne klasy które implementują ten interfejs na r�
 Studenci mają być posortowani według indeksu. (indeks ma mieć format PJATK, np. s12345)
 
 ----
+
+# LAB11
+
+1. Lista – utwórz dwie następujące metody statyczne :
+- Metoda do wyświetlania zduplikowanych elementów w liście
+- Metoda usuwająca zduplikowane elementy w liście
+- 
+Obie metody powinny na wejściu przyjmować argument typu interfejs Listy z dowolnym zbiorem elementów (List<>).
+
+Przetestuj swoje rozwiązanie.
+
+----
+
+2. Napisz program do losowania gry w lotto przy pomocy kolekcji Set.
+
+Oba zbiory – wybrane przez użytkownika liczby w zakresie 1-49 oraz wylosowane przez komputer 1-49 powinny zawierać się w kolekcji typu Set (6 wybranych liczb oraz 6 wylosowanych liczb). Program powinien odpytać użytkownika o 6 liczb – w sytuacji gdy użytkownik podaje nie-liczbę, lub liczbę spoza zakresu program prosi o ponowne wybranie liczby. Po wykonaniu losowania program wyświetla liczbę trafień.
+
+----
+
+3. Napisz metodę do zliczania wystąpień słów w tekście zliczWystapieniaSlow(String tekst):Map<String, Integer> :
+- Metoda powinna utworzyć mapę ‘słowo’ -> ilość wystąpień
+- Przetestuj działanie programu wyświetlając utworzoną mapę.
+
+----
+
+4. Napisz metodę do tworzenia skorowidzu liter : skorowidzLiterowy(String tekst):Map<String, Set<Integer>> :
+- Metoda rozdziela zadany tekst na pojedyncze litery (.split(„”);) b) Iteruje przez wszystkie litery
+- Aktualizuje indeksy wystąpień dla każdej litery
+- Zwraca mapę w postaci: litera -> [indeksy wystąpień]
+
+----
+
+5. Napisz program, która przyjmie dowolny tekst przesłany przez użytkownika, a następnie obliczy liczbę wystąpień spółgłosek i samogłosek.
+
+----
+
+6. Napisz program pobierający od użytkownika 10 unikatowych liczb (użyj Seta) i wyświetlający ich sumę.
+          
+----
+
+7. Napisz metodę przyjmującą Listę typu String i zwracającą kopię oryginalnej listy, lecz zawierającą jedynie elementy o parzystej długości.
+
+----
+
+8. Napisz metodę, która przyjmuje dowolny tekst (String) i zwraca liczbę unikatowych znaków
+
+----
