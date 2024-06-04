@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 class VowelsConsonants {
     static int countVowels(List<String> list) {
         int count = 0;
-        Pattern VOWELS = Pattern.compile("[aeiou]");
+        Pattern VOWELS = Pattern.compile("[aeiouy]");
 
         for (String s : list) {
             Matcher matcher = VOWELS.matcher(s);
@@ -19,7 +19,7 @@ class VowelsConsonants {
     }
     static int countConsonants(List<String> list) {
         int count = 0;
-        Pattern CONSONANTS = Pattern.compile("[bcdfghjklmnpqrstvwxyz]");
+        Pattern CONSONANTS = Pattern.compile("[bcdfghjklmnpqrstvwxz]");
 
         for (String s : list) {
             Matcher matcher = CONSONANTS.matcher(s);
