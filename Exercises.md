@@ -1,4 +1,3 @@
-At some point there'll be all tasks listed here.
 # LAB01
 
 1. Napisz program który wyświetli wynik następującego działania:
@@ -488,5 +487,26 @@ Oba zbiory – wybrane przez użytkownika liczby w zakresie 1-49 oraz wylosowane
 ----
 
 8. Napisz metodę, która przyjmuje dowolny tekst (String) i zwraca liczbę unikatowych znaków
+
+----
+
+# LAB12
+
+1. Utwórz klasę Osoba z atrybutami:
+- imie:String
+- Nazwisko:String
+- oraz konstruktorem przyjmującym oba teksty.
+
+Następnie nadpisz metodę toString() dla czytelnego wyświetlenia osoby np. {%imie%, %nazwisko%}
+
+Niech klasa Osoba implementuje interfejs Comparable w taki sposób, aby obiekty klasy Osoba były sortowane po nazwisku w kolejności odwrotnej do porządku alfabetycznego (z>a).
+
+Utwórz klasę Main oraz blok PSVM i tam dodaj osoby do listy i wyświetl stan listy przed i po sortowaniu za pomocą wyżej wspomnianego interfejsu.
+
+----
+
+2. Napisz metodę, który przyjmie dowolny tekst, a następnie zwróci mapę wystąpień samogłosek w przesłanym tekście. Niech metoda ignoruje wielkość liter. Następnie dodaj blok PSVM i pozwól użytkownikowi na przesłanie własnego tekstu do tej metody. Wynik (mapę) wyświetl za pomocą polecenia SOUT.
+
+zliczSamogloski(String tekst): Map<String, Integer> -> “Ala ma kota” -> [„A” -> 4, „O” -> 1]
 
 ----
