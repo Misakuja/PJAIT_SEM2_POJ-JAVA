@@ -1,4 +1,4 @@
-package LAB12.LAB12_Ex03;
+package LAB12.LAB12_Ex01;
 
 import java.util.Scanner;
 import java.util.Collections;
