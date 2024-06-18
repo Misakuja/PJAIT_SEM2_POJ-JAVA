@@ -510,3 +510,48 @@ Utwórz klasę Main oraz blok PSVM i tam dodaj osoby do listy i wyświetl stan l
 zliczSamogloski(String tekst): Map<String, Integer> -> “Ala ma kota” -> [„A” -> 4, „O” -> 1]
 
 ----
+
+# LAB13
+
+1. Tworzenie aplikacji GUI z API
+Napisz prosty program do obliczania wieku przy pomocy biblioteki JavaFX. Cały kod powinien znajdować się w jednej klasie a interfejs graficzny powinien być utworzony bezpośrednio z kodu. Specifykacja: 
+- Wykorzystaj layout VBox 
+- Umieść w nim pole tekstowe z promptTextem ‘Podaj imie’
+- Umieść pole typu datePicker w którym użytkownik poda datę
+- Umieść pole typu Button z tekstem ‘Oblicz’
+- Umieść pole typu Label, w którym zostanie wyświetlony wiek osoby w latach np. ‘Gort ma 3 lata’
+- Jeśli użytkownik wprowadzi datę w przyszłości wyzeruj pole i wyświetl błąd ‘wprowadzono datę w przyszłości’ 
+
+----
+
+2. Utwórz program, który zaszyfruje komunikat. Powinien składać się z dwóch TextArea, TextField i Buttona.
+- Użytkownik wpisuje tekst w pierwszy z TextArea.
+- Następnie w TextField wpisuje cyfrę, która zadecyduje o ile należy przesunąć każdy ze znaków w stringu. Np. tekst „abc” przesunięty o 3 da nam „def”. Białe znaki (spacje) zostawiamy bez zmian.
+- Wyświetl wynikowy tekst w drugim TextArea.
+
+----
+
+3. Utwórz podstawowy kalkulator, który będzie pozwalał na wpisywanie liczb poprzez przyciski udostępniał podstawowe operacje takie jak : 
+- Dodawanie
+-  Odejmowanie
+- Mnożenie
+- Dzielenie
+- Czyszczenie rezultatów 
+
+Wynikiem powinien być program składający się z 3 elementów: pliku .fxml, klasy Controllera oraz klasy Application. 
+
+----
+
+# LAB14
+ 
+1. Kasa samoobsługowa
+Przygotuj aplikację kasy samoobsługowej sklepu spożywczego.
+- Sklep sprzedaje owoce, warzywa, nabiał, produkty mięsne i słodycze.
+  - Do bazowej ceny produktu dodajemy podatek: owoce i warzywa 3%, nabiał i mięso 5%, słodycze 8%.
+- Przygotuj aplikację w której po uruchomieniu sklep będzie miał losowy asortyment (losową ilość każdego z produktu). Określ różne szanse na pojawienie się produktu zależnie od kategorii (np. batoniki i czekolady będą rzadziej niż jabłka).
+- Przygotuj interfejs (tekstowy lub graficzny) w którym użytkownik będzie mógł wybrać produkty, włożyć je do koszyka i za nie zapłacić.
+- Niech produkty w asortymencie i koszyku będą posortowane według ceny (od najdroższego do najtańszego produktu). Najlepiej jakbyśmy mieli możliwość wybrania różnych sortowań.
+- Stwórz kody promocyjne które po wpisaniu obniżą cenę jakichś kategorii produktów (tylko owoce lub warzywa mogą być objęte promocją przygotuj dwa różne kody promocyjne, naraz można użyć jednego)
+
+----
+
