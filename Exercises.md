@@ -544,8 +544,7 @@ Wynikiem powinien być program składający się z 3 elementów: pliku .fxml
 
 # LAB14
  
-1. Kasa samoobsługowa
-Przygotuj aplikację kasy samoobsługowej sklepu spożywczego.
+1. Przygotuj aplikację kasy samoobsługowej sklepu spożywczego.
 - Sklep sprzedaje owoce, warzywa, nabiał, produkty mięsne i słodycze.
   - Do bazowej ceny produktu dodajemy podatek: owoce i warzywa 3%, nabiał i mięso 5%, słodycze 8%.
 - Przygotuj aplikację w której po uruchomieniu sklep będzie miał losowy asortyment (losową ilość każdego z produktu). Określ różne szanse na pojawienie się produktu zależnie od kategorii (np. batoniki i czekolady będą rzadziej niż jabłka).
